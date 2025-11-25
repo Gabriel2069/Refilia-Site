@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Círculo Refilia — Recompensas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-circulo">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/poster-visual.png" alt="Refilia logo" class="brand-mark" />
+        <div>
+          <h1 class="brand-name">Refilia</h1>
+          <p class="tag">Círculo Refilia — pontos e benefícios</p>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="refiai.html" class="nav-link">RefiAI</a>
+        <a href="circulo.html" class="nav-link active">Círculo Refilia</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="circulo-hero">
+      <div class="container">
+        <h2>Círculo Refilia</h2>
+        <p class="lead">Pontos por refil, recompensas, níveis e acesso a produtos próprios com desconto.</p>
+
+        <div class="rewards-grid">
+          <div class="reward-card">
+            <h4>Nível Bronze</h4>
+            <p>1–20 pontos: 3% desconto</p>
+          </div>
+          <div class="reward-card">
+            <h4>Nível Prata</h4>
+            <p>21–60 pontos: 7% desconto + ofertas exclusivas</p>
+          </div>
+          <div class="reward-card">
+            <h4>Nível Ouro</h4>
+            <p>>60 pontos: 12% desconto + frete grátis B2B</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="container">
+        <h3>Produtos Próprios</h3>
+        <div class="products-grid">
+          <article class="product">
+            <img src="assets/poster-visual.png" alt="Eco-bag" />
+            <h4>EcoBag Refilia</h4>
+            <p>Bolsa reutilizável em algodão orgânico — use e acumule pontos.</p>
+            <div class="product-meta">
+              <span class="price">R$ 39,90</span>
+              <button class="btn ghost" onclick="openModal('EcoBag Refilia','Bolsa de algodão orgânico 38x42')">Detalhes</button>
+            </div>
+          </article>
+
+          <article class="product">
+            <img src="assets/hero-promo.png" alt="Garrafa Refilia" />
+            <h4>Garrafa Refilia</h4>
+            <p>Pet reutilizável com bico especial para refil — design ergonômico.</p>
+            <div class="product-meta">
+              <span class="price">R$ 24,90</span>
+              <button class="btn ghost" onclick="openModal('Garrafa','Capacidade 1L, livre de BPA')">Detalhes</button>
+            </div>
+          </article>
+
+          <article class="product">
+            <img src="assets/interior-white.png" alt="Cartão Refilia" />
+            <h4>Cartão Círculo</h4>
+            <p>Cartão físico ou digital que acumula pontos por refil.</p>
+            <div class="product-meta">
+              <span class="price">Grátis no cadastro</span>
+              <button class="btn ghost" onclick="openModal('Cartão','Digital após cadastro')">Detalhes</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-low">
+      <div class="container">
+        <a class="btn primary" href="index.html">Voltar à home</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL SIMPLES PARA PRODUTOS -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close" onclick="closeModal()" aria-label="Fechar">✕</button>
+      <div class="modal-body">
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Protótipo de fidelidade — Círculo Refilia.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
